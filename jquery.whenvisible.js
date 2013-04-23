@@ -36,7 +36,7 @@
         		// decrement the timeout counter each run
 	    		base.timeout--;
 
-	        	if (!!base.$el.height()) {
+	        	if (!!base.$el.is(':visible')) {
 	        		base.callback(base.$el);
 	        		methods.isVisible = true;
 	        		clearInterval(methods.si);
